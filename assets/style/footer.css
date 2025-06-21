@@ -1,0 +1,42 @@
+  /* Configs do Footer */
+#footer{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-buttons);
+}
+#footer h2{
+    font-size: 1em;
+}
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807 );
+}
+
+#github{
+    background-color: #010409;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+#footer_redes .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-fundo);
+    border-radius: 50%;
+
+    transition: all 0.4s;
+    text-decoration: none;
+}
+#footer_redes{
+    display: flex;
+    gap: 2em;
+}
+#bloco3 textarea{
+    height: 50px;
+    resize: none;
+}
