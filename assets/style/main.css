@@ -13,7 +13,7 @@ main{
 }
 
 
-/* Configs do Home */
+/* Configs da aba Home */
 #home h2{
     font-size: 1.8em;
 }
@@ -48,11 +48,16 @@ iframe{
 #title-iframe{
     margin-top: 2em;
 }
-a{
+#link{
     color: var(--color-legendas);
+    opacity: .6;
+    text-decoration: none;
+}
+#link:hover{
+    text-decoration: underline;
+    opacity: 1;
 }
 #title-img{
-    margin-top: 3em;
     text-align: center;
     text-shadow: 3px 3px 5px var(--color-shadow);
 }
@@ -88,7 +93,7 @@ a{
 }
 
 
-/* Configs do Sobre */
+/* Configs da aba Sobre */
 #content-up{
     font-size: 1.6em;
     display: flex;
@@ -148,7 +153,7 @@ a{
     background-color: var(--color-fundo);
 }
 #cv a:last-child button:hover {
-    color: var(--color-fundo);
+    color: var(--color-title-main);
     background-image: url(../imgs/background.png);
     background-position: center;
     background-size: 200%;
@@ -171,3 +176,69 @@ a{
 #sobre-mim h2{
     text-align: center;
 }
+#leque-tools{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 0 6em;
+}
+#leque-tools img{
+    background-color: var(--color-title-main);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 3px var(--color-leque-swap);
+}
+
+
+/* Configs da aba Projetos */
+#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+#projetos h2,
+#projetos p{
+    font-size: 1.8em;
+    text-align: center;
+}
+#projetos p{
+    font-size: 1.4em;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+#projetos-wrap .content img{
+    width: 300px;
+    border-radius: 14px;
+}
+#projetos-wrap .content{
+    cursor: pointer;
+}
+#projetos-wrap{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#projetos-wrap a{
+    display: none;
+}
+#projetos-wrap .content:hover #projetos-wrap a{
+    display: block;
+}
+
+#projetos-wrap .content{
+    background-image: url(../imgs/background.png);
+    background-position: left;
+    background-size: 400%;
+    border-radius: 12px;
+    box-shadow: 2px 6px 3px 3px var(--color-shadow);
+} 
+
