@@ -1,42 +1,55 @@
-  /* Configs do Footer */
 #footer{
-    margin-top: 4em;
+    margin-top: 100px;
+    padding: 40px 0;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    background-color: var(--color-buttons);
+    justify-content: space-around;
+    background-color: var(--color-title);
 }
-#footer h2{
-    font-size: 1em;
+#nav-footer #menu{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#waves{
+    margin-top: 1.4em;
+    position: absolute;
+    width: 789px;
+}
+#footer #contatos-footer,
+#footer #nav-footer,
+#footer #social-footer{
+    text-align: center;
+}
+#footer h2,
+#footer h3,
+#footer p{
+    color: var(--color-title-main);
+}
+#social-div{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#social-div a{
+    color: var(--color-title-main);
+    border-radius: 50%;
+}
+#social-div i{
+    transition: .4s;
+    font-size: 1.8em;
+    padding: 7px 8px;
+}
+.footer-link:hover i{
+    transform: scale(120%);
 }
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807 );
 }
 
 #github{
-    background-color: #010409;
+    background-color: #101414;
 }
 
-#whatsapp{
-    background-color: #25d366;
-}
-#footer_redes .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--color-fundo);
-    border-radius: 50%;
-
-    transition: all 0.4s;
-    text-decoration: none;
-}
-#footer_redes{
-    display: flex;
-    gap: 2em;
-}
-#bloco3 textarea{
-    height: 50px;
-    resize: none;
+#discord{
+    background-color: #5865f2;
 }
