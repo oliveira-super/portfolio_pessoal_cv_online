@@ -6,11 +6,24 @@
     <link rel="stylesheet" href="assets/style/source.css">
     <title>Portfólio pessoal - Daniel</title>
 
-              <!-- Symbolos cdn das redes sociais -->
+              <!-- tema separado para script -->
+    <link rel="stylesheet" href="assets/style/temas/light.css" id="tema-header">
+              <!-- Simbolos cdn das redes sociais e toggle buttom -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
+        <!--Botão tema-->
+        <div id="back-buttom">
+          <div id="mask-buttom">
+            <div id="toggle-buttom"></div>
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          </div>
+        </div>
+
         <h1>Portfólio - Daniel Filipe Oliveira</h1>
         <nav>
           <ul id="menu">
@@ -31,5 +44,6 @@
 
       <script src="src/scripts/html.js"></script>
       <script src="src/scripts/interatividade.js"></script>
+      <script src="src/scripts/mediaquerry.js"></script>
 </body>
 </html>

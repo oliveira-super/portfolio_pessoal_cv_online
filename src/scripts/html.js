@@ -32,7 +32,7 @@ const objetoPages = {
     `,
     sobre: `
       <div id="sobre">
-        <div id="content-up">
+        <div id="content-up" class="content-portfolio">
             <div id="sobre-left">
               <h2>Olá, eu sou o <span>Daniel Filipe</span></h2>
               <p> Estudante de ADS</p>
@@ -53,7 +53,7 @@ const objetoPages = {
             </div>
         </div>
   
-        <div id="content-bottom">
+        <div id="content-bottom" class="content-portfolio">
           <div id="sobre-mim">
             <h2>Sobre mim</h2>
             <p>Curioso desde 2009 em computação, hoje cursando ADS (Análise e Desenvolvimento de Sistemas) sou entusiasta em tecnologias, buscando sempre por conta própria aprender e/ou me aprimorar.<br>
@@ -62,7 +62,7 @@ const objetoPages = {
             <p>Atualmente estudando Java, sou apaixonado por tecnologia, e entusiasta em aprender e solucionar problemas, tenho como objetivo continuar a me aperfeiçoar, e me tornar um desenvolvedor e contribuir com o desenvolvimento e de aplicações, em projetos de sucessos.</p>
             
             <h2>Leque de ferramentas atuais</h2>
-              <div id="leque-tools">
+              <div id="leque-tools" class="content-portfolio">
                 <img src="assets/imgs/htmlico.png" alt="icone do html">
                 <img src="assets/imgs/cssico.png" alt="icone do css">
                 <img src="assets/imgs/jsico.png" alt="icone do javascript">
@@ -158,4 +158,4 @@ const objetoPages = {
         </div>
       </div>
     `
-  };
+  }

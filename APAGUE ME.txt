@@ -1,0 +1,7 @@
+
+
+responsividade CSS com media querry
+
+docuemntar no readme igual portal noticias com emoji e img etc
+
+criar repositorio e dar push

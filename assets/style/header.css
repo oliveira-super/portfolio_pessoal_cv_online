@@ -51,3 +51,71 @@ ul li:hover{
 ul li p{
     color: var(--color-title-main);
 }
+
+/* Configs do botão tema */
+#back-buttom{
+    margin-left: 10px;
+    position: absolute;
+    top: 10;
+    left: 0;
+    height: 36px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: var(--color-paragrafo);
+    overflow: hidden;
+    font-size: .9em;
+  }
+  #back-buttom,
+  #mask-buttom{
+    height: 36px;
+    width: 90px;
+  }
+  #mask-buttom{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #toggle-buttom{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--color-fundo);
+
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  #back-buttom i{
+    font-size: 2em;
+    color: var(--color-fundo)
+  }
+  .fa-solid{
+    cursor: pointer;
+  }
+
+/* Animação para o botao tema */
+  @keyframes toggle-btn-moon {
+    from{
+      left: 24px;
+    }
+    to{
+      left: 67px;
+    }
+  }
+  @keyframes toggle-btn-sun {
+    from{
+      left: 67px;
+    }
+    to{
+      left: 24px;
+    }
+  }
+  .btn-moon{
+    animation: toggle-btn-moon ease-out .6s forwards;
+  }
+  .btn-sun{
+    animation: toggle-btn-sun ease-out .6s forwards;
+  }

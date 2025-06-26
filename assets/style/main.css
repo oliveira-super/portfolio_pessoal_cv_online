@@ -93,9 +93,9 @@ iframe{
     background-color: var(--color-title-main);
     transform: scale(105%);
 }
+ 
 
-
-/* Configs da aba Sobre */
+    /* Configs da aba Sobre */
 #content-up{
     font-size: 1.6em;
     display: flex;

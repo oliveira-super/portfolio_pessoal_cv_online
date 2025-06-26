@@ -30,17 +30,17 @@
     justify-content: center;
     gap: 30px;
 }
-#social-div a{
-    color: var(--color-title-main);
+.footer-link{
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
-}
-#social-div i{
-    transition: .4s;
-    font-size: 1.8em;
-    padding: 7px 8px;
-}
-.footer-link:hover i{
-    transform: scale(120%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-title-main);
+    text-decoration: none;
+    font-size: 1.9em;
+    transition: .6s;
 }
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807 );
@@ -52,4 +52,8 @@
 
 #discord{
     background-color: #5865f2;
+}
+.footer-link:hover{
+    font-size: 1.5em;
+    opacity: .9;
 }
