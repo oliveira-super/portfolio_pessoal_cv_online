@@ -5,9 +5,9 @@ const menuItens = document.querySelectorAll('#menu li')
 
 const tema = document.getElementById("tema-header")  
 
-var toggleButton = document.getElementById("toggle-buttom")
+const  toggleButton = document.getElementById("toggle-button")
 
-const toggle = document.querySelectorAll('.fa-sun, .fa-moon, #toggle-buttom')
+const toggle = document.querySelectorAll('.fa-sun, .fa-moon, #toggle-button')
 toggleTema = false
 
 
@@ -25,7 +25,7 @@ toggle.forEach(btn => {
       toggleButton.classList.add("btn-moon")
       toggleButton.classList.remove("btn-sun")
     } else {
-      console.log("Trocando para light")
+      console.log("Trocando para light ")
       tema.setAttribute("href", "assets/style/temas/light.css")
   
       //setar animação para o sol
@@ -33,6 +33,7 @@ toggle.forEach(btn => {
       toggleButton.classList.remove("btn-moon")
 }})
 })
+
 
 // Trocar de abas 
 //          Função para chamar a aba selecionada
@@ -60,16 +61,16 @@ document.addEventListener('click', (e) => {
 //          Carregar a página inicial
 reloadPage("home")
 function reloadPage(page) {
-//fade ao iniciar
+//          Fade ao iniciar
   content.classList.add("fade-out")
 
-//arrowfunction para esperar animação e realizar as trocas de classes
+//          Arrowfunction para esperar animação e realizar as trocas de classes
   setTimeout(() => {
     content.innerHTML = objetoPages[page] + objetoPages.footer
     content.classList.remove("fade-out")
     content.classList.add("fade-in")
 
-// remove o fade para n quebrar a animação
+//          Remove o fade para não sobrepor a animação
     setTimeout(() => {
       content.classList.remove("fade-in")
     }, 500 )

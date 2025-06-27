@@ -1,0 +1,140 @@
+/* sidebar media queries */
+.sidebar-btn{
+    color: var(--color-title-main);
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    font-size: 2.8em;
+    z-index: 4;
+    transition: .6s;
+  }
+  #sidebar-btn{
+    display: none;
+  }
+  .sidebar-btn:hover{
+    transform: scale(118%);
+  }
+  .mask-sidebar{
+    animation: mask-turn-on ease-out .9s forwards;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(30px);
+}
+.mask-sidebar-off{
+    animation: mask-turn-off ease-out .9s forwards;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(30px);
+    user-select: none;
+    pointer-events: none;
+}
+
+@keyframes mask-turn-on {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes mask-turn-off {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.bars-on{
+  transform: scale(-90%);
+}
+.bars{
+  animation: bars-off ease-out .9s forwards;
+}
+@keyframes bars-on {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+@keyframes bars-off {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+/* config segundo botao tema - botao do sidebar */
+.back-button-on i{
+    font-size: 2em;
+    color: var(--color-fundo)
+}
+.back-button-on{
+    animation: botao-on ease-out .9s forwards;
+    margin-left: 10px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 36px;
+    width: 90px;
+    border-radius: 30px;
+    background-color: var(--color-paragrafo);
+    overflow: hidden;
+    font-size: .9em;
+    z-index: 10;
+  }
+  .back-button-on{
+    height: 36px;
+    width: 90px;
+  }
+  @keyframes botao-on {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+
+  /* config da nav bar no sidebar */
+  .nav-header-side{
+    display: none;
+  }
+ .nav-header-side-on ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3em;
+}
+  .nav-header-side-on{
+    animation: nav-on ease-out .9s forwards;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+  @keyframes nav-on {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }

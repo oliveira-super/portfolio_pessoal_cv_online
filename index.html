@@ -8,24 +8,54 @@
 
               <!-- tema separado para script -->
     <link rel="stylesheet" href="assets/style/temas/light.css" id="tema-header">
-              <!-- Simbolos cdn das redes sociais e toggle buttom -->
+              <!-- Simbolos cdn das redes sociais e toggle button -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
-    <header>
+  <!--Botão para sidebar-->
+  <i id="sidebar-btn" class="fa-solid fa-bars sidebar-btn sidebar-on"></i>
+  
+  <!--Botão tema na sidebar-->
+  <div id="back-button-side" class="back-button">
+    <div id="mask-button">
+      <div id="toggle-button"></div>
+      <i class="fa-solid fa-sun" aria-hidden="true"></i>
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </div>
+  </div>
+
+  <!--nav do sidebar-->
+  <nav id="nav-header-side" class="nav-header-side">
+    <ul id="menu">
+      <li data-page="home"><p>Início</p></li>
+      <li data-page="sobre"><p>Sobre</p></li>
+      <li data-page="projetos"><p>Projetos</p></li>
+      <li data-page="contato"><p>Contato</p></li>
+    </ul>
+  </nav>
+  
+
+  <!--mask para sidebar-->
+  <div class="mask-sidebar-off" id="sidebar-mask">
+  </div> 
+
+
+  <header>
         <!--Botão tema-->
-        <div id="back-buttom">
-          <div id="mask-buttom">
-            <div id="toggle-buttom"></div>
+        <div class="back-button">
+          <div id="mask-button">
+            <div id="toggle-button"></div>
             <i class="fa-solid fa-sun" aria-hidden="true"></i>
             <i class="fa-solid fa-moon" aria-hidden="true"></i>
           </div>
         </div>
 
-        <h1>Portfólio - Daniel Filipe Oliveira</h1>
-        <nav>
+        <h1 id="title-normal">Portfólio - Daniel Filipe Oliveira</h1>
+        <h1 id="title-querries">Portfólio <br> Daniel Filipe Oliveira</h1>
+
+        <nav class="nav-header">
           <ul id="menu">
             <li data-page="home"><p>Início</p></li>
             <li data-page="sobre"><p>Sobre</p></li>
@@ -44,6 +74,6 @@
 
       <script src="src/scripts/html.js"></script>
       <script src="src/scripts/interatividade.js"></script>
-      <script src="src/scripts/mediaquerry.js"></script>
+      <script src="src/scripts/media_queries.js"></script>
 </body>
 </html>

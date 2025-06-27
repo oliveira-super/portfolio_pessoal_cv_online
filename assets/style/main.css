@@ -16,12 +16,16 @@ main #contato{
 }
 
 /* Configs da aba Home */
-#home h2{
-    font-size: 1.8em;
+#home{
+    margin-top: 1em;
 }
 #home p{
-    font-size: 1.2em;
-    line-height: 1.4em;
+    text-align: justify;
+}
+#home hr{
+    width: 94%;
+    margin: 3em auto;
+    border: 1px solid var(--color-hr);
 }
 #iframe{
     background-color: black;
@@ -64,9 +68,9 @@ iframe{
     text-shadow: 3px 3px 5px var(--color-shadow);
 }
 #langs{
+    margin-top: 2em;
     display: flex;
     justify-content: space-evenly;
-    padding: 2em;
 }
 #langs a{
     background-color: var(--color-title);
@@ -105,14 +109,10 @@ iframe{
 }
 #content-up h2{
     color: var(--color-paragrafo);
-    line-height: 1em;
     width: 7em;
 }
 #content-up span{
     color: var(--color-title);
-}
-#content-up p{
-    font-size: .8em;
 }
 #mask-foto{
     width: 220px;
@@ -170,13 +170,13 @@ iframe{
     text-indent: .6em;
 }
 #sobre-mim p{
-    padding-bottom: 2em;
-    width: 720px;
-    margin: auto;
-    text-align: justify;
+    padding: 0 .9em 2em .9em;
 }
 #sobre-mim h2{
     text-align: center;
+}
+#leque-tools-h2{
+    margin-top: 2em;
 }
 #leque-tools{
     margin-top: 2em;
@@ -199,16 +199,12 @@ iframe{
     flex-direction: column;
     align-items: center;
     gap: 5em;
+    margin-top: 1em;
 }
 #projetos h2,
 #projetos p{
-    font-size: 1.8em;
     text-align: center;
 }
-#projetos p{
-    font-size: 1.4em;
-}
-
 .content div{
     display: flex;
     flex-direction: column;
@@ -245,14 +241,14 @@ iframe{
     transition: .4s;
 } 
 #projetos-wrap .content div:hover{
-    padding: 0em 1em;
+    padding: 0.5em 1em;
     background-position: center;
 } 
 #projetos-wrap .content:hover a{
     font-size: 1em;
 }
 #projetos-wrap .content a:hover{
-text-decoration: underline;
+    text-decoration: underline; 
 }
 
 

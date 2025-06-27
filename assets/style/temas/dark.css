@@ -2,10 +2,12 @@
     --color-title-main: #FFF3FE;
     --color-title: #9A031E;
     --color-title-desaturado: #595959;
-    --color-fundo: #1b1b1b;
+    --color-fundo: #111111;
     --color-paragrafo: #FFF3FE;
     --color-buttons: #720e21;
     --color-shadow: #0d0d0d90;
     --color-legendas: #545041;
     --color-leque-swap: #FFF3FE;
+    --color-hr: #FFF3FE;
+
 }

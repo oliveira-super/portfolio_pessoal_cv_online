@@ -1,0 +1,93 @@
+@media screen and (max-width: 910px){
+/* responsive: geral */
+    header h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1.1em;
+
+    }
+/* responsive: header */
+    #title-querries{
+        display: block;
+    }
+    #title-normal{
+        display: none;
+    }
+    .nav-header{
+        display: none;
+    }
+    /* botao tema config */
+    .back-button{
+        display: none;
+    }
+/* responsive: home */
+    #sidebar-btn{
+        display: block;
+  }
+    #title-img{
+        margin: 2em 0;
+    }
+    #langs{
+        margin-top: 1em;
+        gap: 2em;
+    }
+    #langs a{
+        background-color: var(--color-title-main);
+        width: 98px;
+        height: 98px;
+    }
+    #langs img{
+        padding-top: 8px;
+        width: 55px;
+        filter: grayscale(0%);
+        opacity: 1;
+    }
+    #langs a:hover{
+        transform: scale(105%);
+        background-color: var(--color-title);
+    }
+/* responsive: sobre */
+    #content-up{
+        font-size: 1.6em;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0.6em;
+    }
+
+    #leque-tools{
+        padding: 0 3em;
+    }
+    #sobre-left h2{
+        margin: auto;
+    }
+/* responsive: projetos */
+    #projetos-wrap .content div{
+        padding: 0.5em 1em;
+        background-position: center;
+    } 
+    #projetos-wrap .content a{
+        font-size: 1em;
+    }
+/* responsive: contato */
+    #contato{
+        width: 100%;
+        position: absolute;
+    }
+/* responsive: footer */
+    #waves{
+        width: 100%;
+    }
+    #nav-header{
+        display: none;
+    }
+    #footer{
+        flex-direction: column;
+        gap: 2em;
+    }
+}
