@@ -118,7 +118,30 @@ const objetoPages = {
   
     `,
     contato: `
-      <div id="contato"></div>
+      <div id="contato">
+      <iframe name="esconder-api-page" style="display:none;"></iframe>
+        <form id="form-contato" action="https://formsubmit.co/lipefirefox13@gmail.com" method="POST" target="esconder-api-page">
+          <div id="side-esq">
+            <div>
+              <label for="nome">Seu nome:</label>
+              <input type="text" id="nome" name="nome" required minlength="3" maxlength="31">
+            </div>
+            
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required maxlength="31">
+            </div>
+          </div>
+          <div id="side-dir">
+            <div>
+              <label for="msg">Envie uma mensagem:</label>
+              <textarea id="msg" name="msg" required maxlength="105"></textarea>
+            </div>
+          </div>
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit" id="botao-form">Enviar</button>
+        </form>
+      </div>
     `,
     footer: `
       <img id="waves" src="assets/imgs/waves.png">

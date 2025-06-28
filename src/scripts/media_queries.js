@@ -12,7 +12,7 @@ const navSidebar = document.getElementById("nav-header-side")
 sidebarBtn.addEventListener('click', () => {
     if (sidebarMask.classList.contains("mask-sidebar")) {
         sidebarMask.classList.remove("mask-sidebar")
-        sidebarMask.classList.add("mask-sidebar-off")
+       sidebarMask.classList.add("mask-sidebar-off")
     } else {
         sidebarMask.classList.remove("mask-sidebar-off" )
         sidebarMask.classList.add("mask-sidebar")

@@ -10,9 +10,10 @@ const  toggleButton = document.getElementById("toggle-button")
 const toggle = document.querySelectorAll('.fa-sun, .fa-moon, #toggle-button')
 toggleTema = false
 
+const botaoForm = document.getElementById('botao-form')
 
 // Trocar tema
-//          Listener para capturar o clique do botao tema
+//          Capturar o clique do botao tema
 //          e mudar conforme o valor booleano
 toggle.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -59,7 +60,7 @@ document.addEventListener('click', (e) => {
 })
 
 //          Carregar a página inicial
-reloadPage("home")
+reloadPage("contato")
 function reloadPage(page) {
 //          Fade ao iniciar
   content.classList.add("fade-out")
@@ -71,8 +72,12 @@ function reloadPage(page) {
     content.classList.add("fade-in")
 
 //          Remove o fade para não sobrepor a animação
-    setTimeout(() => {
-      content.classList.remove("fade-in")
-    }, 500 )
-  }, 500)
+setTimeout(() => {
+  content.classList.remove("fade-in")
+}, 500 )
+}, 500)
 }
+
+botaoForm.addEventListener('click', () => {
+    
+})

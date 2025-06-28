@@ -74,14 +74,9 @@
     #projetos-wrap .content a{
         font-size: 1em;
     }
-/* responsive: contato */
-    #contato{
-        width: 100%;
-        position: absolute;
-    }
 /* responsive: footer */
     #waves{
-        width: 100%;
+        max-width: 100%;
     }
     #nav-header{
         display: none;

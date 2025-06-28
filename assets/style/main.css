@@ -253,9 +253,66 @@ iframe{
 
 
 /* Configs da aba Contato */
-#contato{
+#contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#side-esq div,
+#side-dir div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#side-esq,
+#side-dir{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#contato label{
+    color: var(--color-title);
+    font-family: var(--poppins);
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+#contato input{
+    height: 30px;
+    width: 280px;
+}
+#msg{
+    height: 120px;
+    width: 320px;
+    resize: none;
+    border-radius: 10px;
+    background-color: var(--color-title-main);
+}
+#contato button{
     background-color: var(--color-title);
-    height: 100px;
-    width: 789px;
-    position: absolute;
+    color: var(--color-title-main);
+    border: none;
+    width: 100px;
+    height: 46px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+#contato button:hover{
+    transform: scale(88%);
+    opacity: .8;
+}
+#msg,
+#contato input{
+    border: 1px solid var(--color-title);
+    font-size: 1.2em;
+    font-family: var(--roboto);
+    padding: 2px;
+    color: var(--color-shadow);
+    background-color: var(--color-title-main);
+    border-radius: 8px;
+}
+#contato input:focus,
+#msg:focus{
+    border: 3px solid var(--color-buttons);
+    outline: none;
+    color: var(--color-black);
 }
