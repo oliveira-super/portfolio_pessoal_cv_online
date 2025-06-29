@@ -170,7 +170,8 @@ iframe{
     text-indent: .6em;
 }
 #sobre-mim p{
-    padding: 0 .9em 2em .9em;
+    padding: 0 1.2em 2em 1.2em;
+    text-align: justify;
 }
 #sobre-mim h2{
     text-align: center;

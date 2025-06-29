@@ -66,6 +66,10 @@
     #sobre-left h2{
         margin: auto;
     }
+    #sobre-mim p{
+        padding: 0 .9em 2em .9em;
+        text-align: start
+    }
 /* responsive: projetos */
     #projetos-wrap .content div{
         padding: 0.5em 1em;

@@ -60,7 +60,7 @@ document.addEventListener('click', (e) => {
 })
 
 //          Carregar a página inicial
-reloadPage("contato")
+reloadPage("home")
 function reloadPage(page) {
 //          Fade ao iniciar
   content.classList.add("fade-out")
