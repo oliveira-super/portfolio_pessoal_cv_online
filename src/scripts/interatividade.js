@@ -84,5 +84,6 @@ setTimeout(() => {
 //          Mudar botão ao enviar mensagem pela API
 function enviar(){
   document.getElementById("botao-form").innerText = "Mensagem enviada"
-  botaoForm.classList.add("botaoFormOff")
+  document.getElementById("botao-form").style.opacity = "0.8"
+  document.getElementById("botao-form").style.pointerEvents = "none"
 }
