@@ -42,6 +42,7 @@ function reloadPage(page) {
   content.innerHTML = objetoPages[page] +  objetoPages.footer
 }
 
+
 //          Evento de capturar o clique nos itens do menu
 menuItens.forEach(item => {
   item.addEventListener('click', () => {
@@ -49,6 +50,7 @@ menuItens.forEach(item => {
     reloadPage(page)
   })
 })
+
 
 //          Listener para o SPA gerado pelo javascript
 document.addEventListener('click', (e) => {
@@ -59,25 +61,28 @@ document.addEventListener('click', (e) => {
   }
 })
 
+
 //          Carregar a página inicial
 reloadPage("home")
 function reloadPage(page) {
 //          Fade ao iniciar
   content.classList.add("fade-out")
 
+
 //          Arrowfunction para esperar animação e realizar as trocas de classes
-  setTimeout(() => {
-    content.innerHTML = objetoPages[page] + objetoPages.footer
-    content.classList.remove("fade-out")
-    content.classList.add("fade-in")
+setTimeout(() => {
+  content.innerHTML = objetoPages[page] + objetoPages.footer
+  content.classList.remove("fade-out")
+  content.classList.add("fade-in")
 
 //          Remove o fade para não sobrepor a animação
-setTimeout(() => {
-  content.classList.remove("fade-in")
-}, 500 )
-}, 500)
+  setTimeout(() => {
+    content.classList.remove("fade-in")}, 500 )}, 500
+  )
 }
 
-botaoForm.addEventListener('click', () => {
-    
-})
+//          Mudar botão ao enviar mensagem pela API
+function enviar(){
+  document.getElementById("botao-form").innerText = "Mensagem enviada"
+  botaoForm.classList.add("botaoFormOff")
+}

@@ -317,3 +317,7 @@ iframe{
     outline: none;
     color: var(--color-black);
 }
+.botaoFormOff{
+    pointer-events: none;
+    opacity: .7;
+}

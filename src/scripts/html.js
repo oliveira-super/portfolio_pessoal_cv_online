@@ -139,7 +139,7 @@ const objetoPages = {
             </div>
           </div>
           <input type="hidden" name="_captcha" value="false">
-          <button type="submit" id="botao-form">Enviar</button>
+          <button onclick="enviar()" type="submit" id="botao-form">Enviar</button>
         </form>
       </div>
     `,
